@@ -4,7 +4,7 @@ var socket;
 var code = document.getElementsByTagName('code')[0];
 
 function init() {
-    socket = io.connect('/', { port: 3000, transports: ['websocket'] });
+    socket = io.connect('/', { transports: ['websocket'] });
 
     // Start listening for events
     setEventHandlers();
